@@ -1,4 +1,4 @@
-/* Descripción
+/* Ejercicio 4
  Cree una función llamada combinarUsuarios que:
  - Reciba dos arrays:
    usuarios: array de objetos con id y nombre.
