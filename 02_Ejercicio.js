@@ -1,4 +1,4 @@
-/* Ejercicio 2:
+/*    Ejercicio 2:
 Cree una función llamada actualizarStock que:
 - Reciba un array de productos (objetos con id, nombre, y stock), un id, y un nuevoStock.
 - Busque el producto con el id especificado.
@@ -6,9 +6,11 @@ Cree una función llamada actualizarStock que:
 - Retorne el array modificado. Si el producto no existe, retorna null. */
 
 const actualizarStock = function ( productos, id, nuevoStock) {
-
+    
+    //* Variable que verificará si el id recibido existe en la lista productos 
     let encontrado = false
 
+    //* Ciclo el cual modificará el tamaño del stock antes de la modificación
     for (let index = 0; index < productos.length; index++) {
         if (productos[index]["id"] === id) {
             productos[index]["stock"] = nuevoStock
@@ -17,6 +19,7 @@ const actualizarStock = function ( productos, id, nuevoStock) {
         }
     }
 
+    //* Evaluacion de la variable encontrado para determinar que va a devolver la función
     if (encontrado) {
         return productos
     } else {
